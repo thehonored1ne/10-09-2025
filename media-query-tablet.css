@@ -27,8 +27,9 @@
     }
 
     .head-links {
-        display: inline-block;
+        display: flex;
         margin-right: 1rem;
+        justify-content: space-between;
     }
 
     .head-links ul {
@@ -89,7 +90,7 @@
 
     .hero-title h1 {
         text-align: center;
-        color: black;
+        color: var(--accent-color-btn);
         font-size: clamp(3.014rem, 5vw, 6.24rem);
         text-shadow: 2px 4px 6px rgba(255, 255, 255, 0.486);
         margin: 5rem 0rem 0rem 0rem;
@@ -161,6 +162,7 @@
     .events-title h1 {
         text-align: center;
         font-size: 5rem;
+        color: var(--accent-color-btn);
     }
 
     .events-content {
@@ -169,12 +171,14 @@
     }
 
     .event-selector {
-        padding: 2rem;
+        padding: 1rem;
         text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     .event-selector a {
-        padding: 0rem 1rem;
         color: var(--text-color-2);
         font-weight: 500;
         font-size: clamp(1.80rem, 3vw, 3.6rem);
@@ -247,13 +251,14 @@
         font-weight: bolder;
         text-align: center;
         padding: 2rem 0rem 0rem 0rem;
+        color: var(--accent-color-btn);
     }
 
     .about-us-content {
         text-align: justify;
-        padding: 2rem 5rem 5rem 5rem;
-        line-height: clamp(1.2rem, 5vw, 6.24rem);
-        font-size: clamp(1.80rem, 3vw, 2rem);
+        padding: 2rem 2rem 2rem 2rem;
+        line-height: 2.5rem;
+        font-size: clamp(0.70rem, 3vw, 0.84rem);
     }
 
     .about-us-bg {
@@ -270,7 +275,6 @@
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        border: 1px black solid;
     }
     .contact-left-right {
         padding: 1rem;
@@ -279,7 +283,6 @@
         flex-direction: column;
         height: auto;
         flex: 1 1 400px;
-        border: 1px red solid;
     }
 
     .contact-wrapper {
@@ -290,6 +293,7 @@
     .contact-left-right h1 {
         text-align: center;
         font-size: clamp(1.80rem, 3vw, 3.74rem);
+        color: var(--accent-color-btn);
     }
 
     .contact-left-right p {
@@ -314,6 +318,10 @@
 
     .contact-num p i {
         padding: 1rem;
+    }
+
+    .contact-num p:hover {
+        color: #ff004f;
     }
 
 

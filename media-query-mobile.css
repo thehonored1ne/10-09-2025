@@ -17,7 +17,7 @@
         position: fixed;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 1rem;
         box-shadow: var(--box-shadow-1);
         align-items: center;
@@ -28,14 +28,14 @@
     }
 
     .head-links {
-        display: inline-block;
+        display: flex;
         margin-right: 1rem;
+        justify-content: space-between;
     }
 
     .head-links ul {
         display: flex;
-        padding: 0.5rem;
-        gap: 2rem;
+        gap: 1rem;
         margin: 0;
     }
 
@@ -45,9 +45,10 @@
     }
 
     .head-links ul li a {
-        font-size: clamp(0.5rem, 2vw, 1.87rem);
+        font-size: clamp(0.65rem, 3.5vw, 1rem);
         color: var(--text-color-1);
         cursor: pointer;
+        text-wrap: nowrap;
     }
 
     .head-links ul li a:hover {
@@ -89,7 +90,7 @@
 
     .hero-title h1 {
         text-align: center;
-        color: black;
+        color: var(--accent-color-btn);
         font-size: clamp(1.4rem, 6vw, 1.69rem);
         text-shadow: 2px 4px 6px rgba(255, 255, 255, 0.486);
         margin: 5rem 0rem 0rem 0rem;
@@ -163,6 +164,7 @@
         text-align: center;
         font-size: 3rem;
         margin: 0;
+        color: var(--accent-color-btn);
     }
 
     .events-content {
@@ -171,12 +173,14 @@
     }
 
     .event-selector {
-        padding: 2rem;
+        padding: 1rem;
         text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     .event-selector a {
-        padding: 0rem 1rem;
         color: var(--text-color-2);
         font-weight: 500;
         font-size: clamp(1rem, 2vw, 1.80rem);
@@ -237,16 +241,6 @@
     .about-us {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .about-us {
-        display: flex;
-        flex-direction: column;
         padding: 2rem 3rem 6rem 3rem;
         justify-content: center;
         align-items: center;
@@ -259,6 +253,7 @@
         font-weight: bolder;
         text-align: center;
         padding: 2rem 0rem 0rem 0rem;
+        color: var(--accent-color-btn);
     }
 
     .about-us-content {
@@ -266,9 +261,9 @@
         hyphens: auto;
         word-spacing: -2px; /* Pulls words closer together */
         letter-spacing: -0.5px; /* Pulls letters closer together */
-        padding: 2rem 2rem 5rem 2rem;
-        line-height: clamp(3rem, 3vw, 0.84rem);
-        font-size: clamp(0.9rem, 3.6vw, 1rem);
+        padding: 2rem 2rem 2rem 2rem;
+        line-height: 2rem;
+        font-size: clamp(0.70rem, 3vw, 0.84rem);
     }
 
     .about-us-bg {
@@ -305,6 +300,7 @@
         text-align: center;
         font-size: clamp(1.3rem, 5.1vw, 1.5rem);
         width: 100%;
+        color: var(--accent-color-btn);
     }
 
     .contact-left-right p {
@@ -329,6 +325,10 @@
 
     .contact-num p i {
         padding: 1rem;
+    }
+
+    .contact-num p:hover {
+        color: #ff004f;
     }
 
     .social-icons {
