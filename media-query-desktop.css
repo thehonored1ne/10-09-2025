@@ -246,8 +246,8 @@
     .about-us-content {
         text-align: justify;
         padding: 2rem 5rem 5rem 5rem;
-        line-height: clamp(1.2rem, 5vw, 6.24rem);
-        font-size: clamp(1.80rem, 3vw, 2rem);
+        line-height: clamp(1.2rem, 3vw, 4rem);
+        font-size: clamp(0.7rem, 2vw, 1rem);
     }
 
     .about-us-bg {
@@ -264,7 +264,6 @@
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        border: 1px black solid;
     }
 
     .contact-left-right {
@@ -274,7 +273,6 @@
         flex-direction: column;
         height: auto;
         flex: 1 1 400px;
-        border: 1px red solid;
     }
 
     .contact-wrapper {
